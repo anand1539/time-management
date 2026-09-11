@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-gray-50 text-gray-800; }
+
+/* Small utilities */
+.file-item { @apply p-2 hover:bg-gray-100 cursor-pointer flex items-center gap-3; }
+.file-item.active { @apply bg-white shadow-sm rounded-md; }
